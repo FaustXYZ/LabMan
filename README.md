@@ -1,5 +1,5 @@
 # LabMan
-Small lab management
+Small lab management</br>
 Rookie in php coding, just an experimental system for our own lab.
 Not yet completely finished!(Especially the feedback of reagents apply).
 Combine CSS/JS in php code, so it may seem a little messy.
