@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!-- <link rel="stylesheet" type="text/css" href="css/register.css" />  -->
+<title>TEST HOME PAGE</title>
+<meta name="keywords" content="SJTU,上海交通大学，bio-x，生物信息，bioinformatics，生物统计，biostatistics，癌症，cancer，关联性分析，GWAS，neuro"/>
+<meta name="description" content=""/>
+<style type="text/css">
+a{text-decoration:none}
+#ban{
+        /*float: left;*/
+        width:100%;
+        height:40px;
+        background:#033c59;
+    }
+#slogen{
+        /*float: left;*/
+        width:100%;
+        height:200px;
+        background:#586681;
+    }
+#bar{
+        /*float: left;*/
+        width:250px;
+        height:100%;
+        /*background:#8b364d;*/
+    }
+</style>
+<!-- <style>
+.bottom-center{color:#96a48b;position:absolute;bottom:0px;font-family:"Times New Roman";text-align:center;}</style> -->
+</head>
+<script language="JavaScript"></script>
+<body>
+<body bgcolor="#be8977">
+<div id="ban" style="position: absolute;top:67px"></div>
+    <ul class="navi-box">
+    <div id="navi" style="position: absolute;left:100px;top:2px;width:3000px">
+      <div id="navi-home" style="position:absolute;left:280px;top:78px;"><a href="index.html"><font size=4><font color=#7b8b70>Home page</font></font></a></div>
+      <div id="navi-intro" style="position:absolute;left:480px;top:78px"><a href="/" target="_self"><font size=4><font color=#7b8b70>Introduction</font></font></a></div>
+      <div id="navi-resea" style="position:absolute;left:680px;top:78px"><a href="/" target="_self"><font color=#7b8b70><font size=4>Reasearch</font></font></a></div>
+      <div id="navi-comm" style="position:absolute;left:880px;top:78px"><a href="/" target="_self"><font color=#7b8b70><font size=4>Comments</font></font></a></div>
+      <div id="navi-con" style="position:absolute;left:1080px;top:78px"><a href="/" target="_self"><font color=#7b8b70><font size=4>Contact</font></font></a></div>
+  </div>
+    </ul>
+<div id="slogen" style="position: absolute;top:600px;">
+</div>
+<div id="home-pro" style="position: absolute;top:650px;left:550px">
+    <font size=7><font color=#FFFFFF>!HERE IS SLOGEN!</font></font>
+    </div>
+<!--      <div id="bar" style="position: fixed;top:0px">
+    </div> -->
+ <!--    <div id="des" style="position: absolute;top:10px">
+     </br></br></br></br></br></br><font color=#d69587>Here talks some profile</font></div> -->
+      <a class="header-logo" href="index.html">  
+        <img src="./pic/logo.jpg" alt="" width=100px height=60px style="position:absolute;left:8px;top:5px">       
+    </a>
+
+    <div id="navi-col" style="position:absolute;left:200px;top:80px;background-color:#FFDDAA"></div>
+
+    <!-- PIC ROLL -->
+    <div id="roll">
+    <ul>
+        <li><img src="./pic/roll1.jpg" width=700px height=400px style="position:absolute;top:150px;left:380px"></li>
+        <li><img src="./pic/roll2.jpg" width=700px height=400px style="position:absolute;top:150px;left:380px"></li>
+        <li><img src="./pic/roll3.jpg" width=700px height=400px style="position:absolute;top:150px;left:380px"></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    //因为使用了document，所以js需要放在需要执行的代码下面生效才能生效
+    var li=document.getElementById('roll').getElementsByTagName("li");
+    var num=0;
+    var len=li.length;
+    setInterval(function(){
+        li[num].style.display="none";
+        num=++num==len?0:num;
+        li[num].style.display="inline-block";
+
+    },4000);//切换时间
+</script>
+<div id="block" style="position: absolute;left:10px;top:20px;border:4px;"></div>
+    <div id="man-lab">
+      <img style="position:absolute;right:110px;top:1px" src="./pic/label.png" alt="" width=50px height=50px>
+      <div id="navi-intro" style="position:absolute;right:20px;top:15px"><a href="mana.php" target="_self"><font face="Times New Roman"><font size=4><font color=#000000>Management</font></font></font></a></div></div>
+    <div id="head-title" style="position:absolute;top:17px;left:120px;">
+        <font size=6><font face="Trebuchet MS"><font color="#6a2f45">!HERE IS NAME!</font></font></font>
+    </div>
+<!--  -->
+<div id="bot" style="position:fixed;left:500px;bottom:0px;font-family:Times New Roman;color:#96a48b;background-color:#2F4F4F;">This page is made for home-page test, contact Faust Hsu (molle_faust@hotmail.com) to get more information.</div>

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>  
+<html>   
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<link rel="stylesheet" type="text/css" href="css/register.css" />  
+<title>Register</title>  
+</head>  
+<script language="JavaScript">
+	function Inputcheck(LoginForm){
+		var e_check = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+		if((LoginForm.username.value.length<3)||(LoginForm.username.value.length)>15){
+			alert("Username shoule be 3-15 words!");
+			return false;
+		}
+		if(LoginForm.id.value==""){
+			alert("ID cannot be empty!");
+			return false;
+		}
+		if(LoginForm.password.value.length<6){
+			alert("Password should be at least 6 words!");
+			return false;
+		}
+		if(LoginForm.password.value!=LoginForm.confirm.value){
+			alert("Two password should be the same!");
+			return false;
+		}
+		if(!e_check.test(LoginForm.email.value)){
+			alert("Wrong email address format!");
+			return false ;
+		}
+	}
+</script>  
+  
+<body>   
+<body bgcolor="#f5eded"> 
+<span style="white-space:pre">    </span>  
+<form name="LoginForm" form method="post" action="register.php" onsubmit="return Inputcheck(this)">  
+<font face="Times New Roman"><font color=#CD5C5C><font size=30px><strong>Register Page</strong></font></font></font></br>
+<font color=#8C0044><i>The register function is only open for ones who own a unique <big>SJTU campus ID</big></i></font>
+<span style="white-space:pre">    </span>  <div>  
+<span style="white-space:pre">    </span>      <ul>  
+<span style="white-space:pre">        </span> <li><font size=4><font color=#9182a1><font face="Times New Roman">ID:</font></font></font></br></li>  <li><input name="id" type="text" placeholder ="campus card ID"/></li>  <span style="white-space:pre">            </span>
+<li><font size=4><font color=#9182a1><font face="Times New Roman">Username:</font></font></font></br></li> <li><input name="username" type="text"  placeholder ="3-15 words"/></li>  
+<span style="white-space:pre">            </span>
+<span style="white-space:pre">        </span>     <li><font size=4><font color=#9182a1><font face="Times New Roman">Password:</font></font></font></br></li> <li><input name="password" type="password" placeholder ="at least 6 words"/></li>  
+<span style="white-space:pre">        </span>      <li><font size=4><font face="Times New Roman"><font color=#9182a1>Confirm:</font></font></font></br></li><li><input name="confirm" type="password"  placeholder ="verified your password"/></li>  
+<span style="white-space:pre">        </span>      <li><font size=4><font face="Times New Roman"><font color=#9182a1>Email address:</font></font></font></br></li><li><input name="email" type="text"  placeholder ="common email"/></li> 
+
+<!-- <span style="white-space:pre">            </span>   --><!-- <li><input name="verification" type="text"  placeholder ="input verification code"/></li> -->  
+<!-- <span style="white-space:pre">        </span>  </ul>   -->
+<!-- <span style="white-space:pre">            </span>   --><!-- <div id="text11"><img name="validate" onclick="validate.src+='?' + Math.random();"  -->  
+<!-- <span style="white-space:pre">            </span>  src="verification.php"  alt="refresh this page">  --> 
+ <span style="white-space:pre">            </span>  </div> <!-- <span style="white-space:pre">    </span>     -->
+<span style="white-space:pre">        </span>     <input style="width:80px;height:22px;border:#E6E6FA 1px solid;background:#E6E6FA;color:#BC8F8F" input type="reset" value="Reset" />  
+<span style="white-space:pre">            </span>  <input style="width:80px;height:22px;border:#E6E6FA 1px solid;background:#E6E6FA;color:#BC8F8F" input type="submit" value="Submit" />  
+</br></br>
+<font color=#be686a>Already have an account? Please click <a href="login.html"><font color=#FF0000><font size=5>HERE</font></font></a> to login.</font> 
+<span style="white-space:pre">        </span>    </div>  
+<span style="white-space:pre">        </span>    
+<span style="white-space:pre">    </span>  </form><span style="white-space:pre">   </span>    
+   </div>  
+   <div id="bot" style="position:fixed;left:500px;bottom:0px;font-family:Times New Roman;color:#96a48b;background-color:#2F4F4F;">This page is made for reg-page test, contact Faust Hsu (molle_faust@hotmail.com) to get more information.</div>
+</body>  
+</html>  
